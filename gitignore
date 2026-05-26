@@ -1,0 +1,15 @@
+.env
+.env.example
+__pycache_/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+recordings/*.wav
+recordings/*.m4a
+recordings/*.opus
+recordings/*.mp3
+!recordings/.gitkeep
+results/*.json
+results/*.csv
