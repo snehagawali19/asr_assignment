@@ -2,8 +2,6 @@
 
 Benchmarks Deepgram (baseline) against Sarvam AI and Whisper-large-v3 (via Groq) on 20 self-recorded utterances of Bangalore locality names.
 
-The full story — including failure analysis, surprising findings, and production recommendation — is in [`REPORT.md`](REPORT.md) (filled). [`REPORT_TEMPLATE.md`](REPORT_TEMPLATE.md) is the blank shape.
-
 # Setup
 
 pip install -r requirements.txt
