@@ -13,3 +13,4 @@ recordings/*.mp3
 !recordings/.gitkeep
 results/*.json
 results/*.csv
+.env 
