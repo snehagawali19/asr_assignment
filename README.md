@@ -41,29 +41,23 @@ python scripts/07_realworld_delta.py # computes the "real-world penalty"
 
 ## Files you'll actually open
 
-`data/metadata.csv` The designed experiment — 20 prompts × conditions |
-`recording_guide.md` How to record so the samples don't all sound the same |
+`data/metadata.csv` The designed experiment — 20 prompts × conditions 
+`recording_guide.md` How to record so the samples don't all sound the same 
 `HYPOTHESES.md` Pre-registered predictions — falsifying one is where your "surprise" comes from
 `REPORT_TEMPLATE.md` he opinionated report shape. Fill in numbers, submit this.
 
 ## What we measure and why
 
-WER / CER | Standard for context; weights every word equally — not ideal for entity extraction |
-| **LRA-strict**
+WER / CER , Standard for context; weights every word equally — not ideal for entity extraction 
+**LRA-strict**
 Did the exact locality name appear? Binary. What the product cares about.  
 **LRA-fuzzy**
 Same with Levenshtein tolerance — what a phonetic post-processor could recover
 Latency  
 Approximates production latency for batch APIs  
 Cost at scale  
-Modeled at MVP / Growth / Scale volumes |
+Modeled at MVP / Growth / Scale volumes 
 
 The headline insight typically lives in the gap between WER and LRA-fuzzy: standard ASR benchmarks can recommend the wrong model for an entity-extraction use case.
 
-## Robustness features
 
-- Missing API keys → that provider is skipped, run continues
-- Audio files missing → row recorded as error, run continues
-- Empty `reference` column → WER/CER skipped, LRA still computed
-- All providers behind a single `BaseProvider` interface — adding a 4th is ~50 lines
-- `scripts/00_smoke_test.py` catches setup problems before you burn API credits
