@@ -10,7 +10,7 @@
 > *"For our voice/telephony stack, ship Deepgram Nova-3 for live IVR (best latency + competitive accuracy) and self-hosted IndicConformer for batch WhatsApp voice notes (cuts cost ~80% with no accuracy loss on our use case). Add a phonetic post-processor on top of either — it recovers ~25% of locality misses regardless of model. Whisper-via-Groq is good for prototyping but its hallucination patterns on pure Hindi/Kannada disqualify it from production."*
 
 | Provider | LRA-fuzzy | WER | p50 latency | $ at 50k min/mo | Verdict |
-|---|---|---|---|---|---|
+
 | Deepgram Nova-3 | XX% | X.XX | XXX ms | $XXX | **Recommended for live IVR** |
 | Sarvam Saaras | XX% | X.XX | XXX ms | $XXX | **Recommended for batch** |
 | Whisper large-v3 (Groq) | XX% | X.XX | XXX ms | $XXX / free tier | Prototyping only |
