@@ -1,4 +1,4 @@
-# ASR Shootout — Indian Conversational Speech
+# ASR — Assignment 
 
 Benchmarks Deepgram (baseline) against Sarvam AI and Whisper-large-v3 (via Groq) on 20 self-recorded utterances of Bangalore locality names.
 
