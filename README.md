@@ -27,9 +27,9 @@ python scripts/00_smoke_test.py
 
 # Optional (adds ~15 min) — generalization check on FLEURS Hindi
 
-pip install datasets scipy
-python scripts/06_fleurs_benchmark.py
-python scripts/07_realworld_delta.py # computes the "real-world penalty"
+-pip install datasets scipy
+-python scripts/06_fleurs_benchmark.py
+-python scripts/07_realworld_delta.py # computes the "real-world penalty"
 
 ## API keys (15 min, free tier on all three)
 
