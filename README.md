@@ -17,13 +17,13 @@ python scripts/generate_recordings.py
 
 python scripts/00_smoke_test.py
 
-# Main pipeline
+## Main pipeline
 
-python scripts/01_transcribe.py # ~5-10 min, ~60 API calls/
-python scripts/02_metrics.py # headline tables/
-python scripts/03_failures.py # every locality miss/
-python scripts/05_substitutions.py # what specifically went wrong/
-python scripts/04_cost_analysis.py # production cost model/
+- python scripts/01_transcribe.py # ~5-10 min, ~60 API calls
+- python scripts/02_metrics.py # headline tables
+- python scripts/03_failures.py # every locality miss
+- python scripts/05_substitutions.py # what specifically went wrong
+- python scripts/04_cost_analysis.py # production cost model
 
 # Optional (adds ~15 min) — generalization check on FLEURS Hindi
 
