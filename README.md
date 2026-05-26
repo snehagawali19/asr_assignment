@@ -46,15 +46,14 @@ python scripts/00_smoke_test.py
 
 ## What we measure and why
 
-WER / CER , Standard for context; weights every word equally — not ideal for entity extraction 
+- WER / CER , Standard for context; weights every word equally — not ideal for entity extraction 
 **LRA-strict**
-Did the exact locality name appear? Binary. What the product cares about.  
+- Did the exact locality name appear? Binary. What the product cares about.  
 **LRA-fuzzy**
-Same with Levenshtein tolerance — what a phonetic post-processor could recover
-Latency  
-Approximates production latency for batch APIs  
-Cost at scale  
-Modeled at MVP / Growth / Scale volumes 
+- Same with Levenshtein tolerance — what a phonetic post-processor could recover Latency  
+- Approximates production latency for batch APIs  
+- Cost at scale  
+- Modeled at MVP / Growth / Scale volumes 
 
 The headline insight typically lives in the gap between WER and LRA-fuzzy: standard ASR benchmarks can recommend the wrong model for an entity-extraction use case.
 
