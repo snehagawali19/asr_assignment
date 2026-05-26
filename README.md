@@ -39,10 +39,10 @@ python scripts/00_smoke_test.py
 
 ## Files you'll actually open
 
-`data/metadata.csv` The designed experiment — 20 prompts × conditions 
-`recording_guide.md` How to record so the samples don't all sound the same 
-`HYPOTHESES.md` Pre-registered predictions — falsifying one is where your "surprise" comes from
-`REPORT_TEMPLATE.md` he opinionated report shape. Fill in numbers, submit this.
+-`data/metadata.csv` The designed experiment — 20 prompts × conditions 
+-`recording_guide.md` How to record so the samples don't all sound the same 
+-`HYPOTHESES.md` Pre-registered predictions — falsifying one is where your "surprise" comes from
+-`REPORT_TEMPLATE.md` he opinionated report shape. Fill in numbers, submit this.
 
 ## What we measure and why
 
